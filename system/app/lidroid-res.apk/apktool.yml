@@ -4,3 +4,4 @@ isFrameworkApk: true
 usesFramework:
   ids:
   - 1
+  - 2
