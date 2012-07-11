@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/zzz_background01" android:background="@drawable/zzz_unlock_puzzle_bg_land" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/zzz_puzzlelockfullbg" android:background="@drawable/zzz_unlock_blackbg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="bottom|right|center" android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/zzz_sweepglass" android:background="@drawable/zzz_unlock_textbg" android:layout_width="fill_parent" android:layout_height="73.32999dip" android:layout_marginBottom="82.66998dip" android:layout_alignParentBottom="true">
+                <TextView android:textSize="17.329987dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_sweepglasstext01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:drawableLeft="@drawable/zzz_unlock_icon_lock" />
+                <TextView android:textSize="24.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_sweepglasstext02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.669983dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/zzz_sweepglass2" android:background="@drawable/zzz_unlock_lockbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="82.66998dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="17.329987dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_sweepglasstext03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:drawableLeft="@drawable/zzz_unlock_icon_lock" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/zzz_puzzlenoticalllayout" android:background="@drawable/zzz_unlock_puzzle_noti_icon_call" android:layout_width="113.32999dip" android:layout_height="88.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="41.0dip">
+            <TextView android:textSize="24.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_puzzlenoticalltext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="17.0dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/zzz_puzzlenotimaillayout" android:background="@drawable/zzz_unlock_puzzle_noti_icon_mail" android:layout_width="113.32999dip" android:layout_height="88.0dip" android:layout_marginLeft="145.32999dip" android:layout_marginTop="41.0dip">
+            <TextView android:textSize="24.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_puzzlenotimailtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="17.0dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/zzz_puzzlenotivvmlayout" android:background="@drawable/zzz_unlock_puzzle_noti_icon_visual_voice_mail" android:layout_width="113.32999dip" android:layout_height="88.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="210.0dip">
+            <TextView android:textSize="24.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_puzzlenotivvmtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="17.0dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/zzz_puzzlenotiUnlocklayout" android:background="@drawable/zzz_unlock_puzzle_noti_icon_unlock" android:layout_width="113.32999dip" android:layout_height="88.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="270.0dip">
+            <TextView android:textSize="24.0dip" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/zzz_puzzlenotimailtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="17.0dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/zzz_puzzlematchlayout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="400.66406dip" android:layout_marginTop="126.66998dip">
+            <ImageView android:id="@id/zzz_puzzlematch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

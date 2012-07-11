@@ -1,0 +1,6 @@
+version: 1.4.5
+apkFileName: lidroid-res.apk
+isFrameworkApk: true
+usesFramework:
+  ids:
+  - 1

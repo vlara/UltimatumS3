@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/zzz_background01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/zzz_puzzlelockfullbg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.669983dip" android:typeface="sans" android:textColor="#ffffffff" android:gravity="right" android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.669983dip" android:layout_marginBottom="475.32812dip" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/unlock_missedevent_layout" android:background="@drawable/zz_unlock_missed_event_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="34.76999dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/unlock_missedevent_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+                <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missedevent_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+                <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missedevent_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unlock_missedevent_layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/unlock_missednoticall_layout" android:background="@drawable/zz_unlock_missed_event_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zz_unlock_missedcall_icon" android:scaleType="center" />
+                    <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missednoticall_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+                    <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missednoticall_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/unlock_missednotimail_layout" android:background="@drawable/zz_unlock_missed_event_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zz_unlock_missedtxt_icon" android:scaleType="center" />
+                    <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missednotimail_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+                    <TextView android:textSize="16.0dip" android:typeface="sans" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center" android:id="@id/unlock_missednotimail_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/unlock_arrow" android:background="@drawable/zz_unlock_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="97.32999dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/unlock_event_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.669983dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/missed_call_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:src="@drawable/zz_missed_call_arrow" />
+                <ImageView android:id="@id/event_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@id/missed_txt_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:src="@drawable/zz_missed_txt_arrow" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:id="@id/unlock_lock_button" android:background="@drawable/zz_unlock_lockbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>
