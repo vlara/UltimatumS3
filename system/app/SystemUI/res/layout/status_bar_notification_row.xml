@@ -1,0 +1,47 @@
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/notification_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+>
+    <Button android:layout_width="48.0dip" android:layout_height="fill_parent" android:id="@id/veto" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:layout_marginRight="-80.0dip" android:background="@null" android:paddingRight="8.0dip" android:paddingLeft="8.0dip"
+
+
+
+
+
+
+
+
+
+ />
+
+    <ImageView android:layout_width="@android:dimen/notification_large_icon_width" android:layout_height="@android:dimen/notification_large_icon_height" android:id="@id/large_icon" android:background="@android:drawable/notify_panel_notification_icon_bg_tile" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:scaleType="centerInside" android:clickable="true"
+
+
+
+
+
+
+
+
+ />
+
+    <com.android.systemui.statusbar.LatestItemView android:layout_width="fill_parent" android:layout_height="64.0dip" android:id="@id/content" android:layout_alignParentRight="true" android:background="@drawable/notification_row_bg" android:layout_alignParentTop="true" android:clickable="true" android:layout_toRightOf="@id/large_icon" android:focusable="true"
+
+
+
+
+
+
+
+
+ />
+
+    <View android:layout_width="fill_parent" android:layout_height="@dimen/notification_divider_height" android:background="@drawable/status_bar_notification_row_background_color" android:layout_alignParentBottom="true"
+
+
+
+
+ />
+
+</RelativeLayout>

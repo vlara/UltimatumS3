@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="@android:drawable/dialog_full_holo_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@id/description" android:textAppearance="@android:style/TextAppearance.Small" android:gravity="center" android:textStyle="bold" android:maxLines="1" android:layout_alignParentBottom="true"
+
+
+
+
+
+
+
+
+ />
+
+    <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@id/preview" android:layout_above="@id/description" android:descendantFocusability="blocksDescendants"
+
+
+
+
+
+>
+        <ImageView android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@id/icon" android:scaleType="centerInside" android:visibility="gone"
+
+
+
+
+
+ />
+        <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@id/alt" android:textAppearance="@android:style/TextAppearance.Large" android:gravity="center" android:visibility="gone"
+
+
+
+
+
+
+ />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+>
+    <CheckBox android:id="@id/toggle" android:layout_width="48.0dip" android:layout_height="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:button="@null"
+
+
+
+
+
+
+
+ />
+    <SeekBar android:id="@id/slider" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/toggle" android:layout_centerVertical="true" android:layout_alignParentRight="true" android:paddingLeft="20.0dip" android:paddingRight="20.0dip"
+
+
+
+
+
+
+
+
+ />
+    <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignLeft="@id/toggle" android:layout_alignRight="@id/toggle" android:gravity="center" android:paddingTop="26.0dip" android:textColor="#666666" android:textSize="12.0sp"
+
+
+
+
+
+
+
+
+
+
+ />
+</merge>

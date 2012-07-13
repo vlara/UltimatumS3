@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<com.android.systemui.statusbar.tablet.CompatModePanel android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="@dimen/panel_float" android:paddingRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+
+>
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@id/compat_mode_radio_group" android:background="@android:drawable/dialog_full_holo_dark" android:orientation="vertical" android:padding="10.0dip"
+
+
+
+
+
+>
+        <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@id/compat_mode_off_radio" android:text="@string/compat_mode_off"
+
+
+ />
+        <RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@id/compat_mode_on_radio" android:text="@string/compat_mode_on"
+
+
+ />
+    </RadioGroup>
+</com.android.systemui.statusbar.tablet.CompatModePanel>

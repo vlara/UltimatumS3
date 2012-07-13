@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<com.android.systemui.statusbar.tablet.NotificationPeekPanel android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@android:drawable/dialog_full_holo_dark" android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+
+
+>
+    <FrameLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/status_bar_background" android:orientation="vertical" android:id="@id/content" android:gravity="bottom|center" android:animationCache="false" android:clickable="true" android:focusable="true" android:descendantFocusability="afterDescendants"
+
+
+
+
+
+
+
+
+
+
+
+ />
+</com.android.systemui.statusbar.tablet.NotificationPeekPanel>

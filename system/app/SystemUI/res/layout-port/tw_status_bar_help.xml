@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<com.android.systemui.statusbar.phone.StatusBarHelpView android:paddingTop="@android:dimen/status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+
+>
+    <View android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_alignParentTop="true" android:layout_marginTop="@dimen/quick_setting_button_height" android:background="@drawable/tw_help_view_bg"
+
+
+
+
+ />
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:id="@id/help_view_finger" android:layout_alignParentLeft="true" android:scaleType="center" android:src="@drawable/tw_help_view_finger"
+
+
+
+
+
+
+ />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="@dimen/quick_setting_button_height" android:background="@drawable/tw_help_view_button_help_bubble_text_bg" android:id="@id/help_view_button_help_bubble_text" android:layout_toRightOf="@id/help_view_finger" android:layout_marginRight="4.0dip" android:text="@string/help_view_quick_panel_help_text" android:textColor="#ffffff" android:textSize="18.0dip"
+
+
+
+
+
+
+
+
+
+ />
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:background="@drawable/tw_btn_help_view" android:id="@id/help_view_button" android:layout_marginRight="6.0dip" android:text="@android:string/ok" android:textColor="#ffffff" android:textSize="18.0dip" android:minWidth="120.0dip" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_marginBottom="70.0dip"
+
+
+
+
+
+
+
+
+
+
+
+ />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/tw_help_view_notification_help_bubble_text_bg" android:id="@id/help_view_notification_help_bubble_text" android:layout_marginRight="6.0dip" android:text="@string/help_view_notification_help_text" android:textColor="#ffffff" android:textSize="18.0dip" android:layout_above="@id/help_view_button" android:layout_marginLeft="6.0dip"
+
+
+
+
+
+
+
+
+
+ />
+
+</com.android.systemui.statusbar.phone.StatusBarHelpView>

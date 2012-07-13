@@ -1,0 +1,9 @@
+version: 1.4.8.6575ec9
+apkFileName: SystemUI.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '15'

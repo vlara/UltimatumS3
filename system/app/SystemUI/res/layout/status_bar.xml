@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<com.android.systemui.statusbar.phone.PhoneStatusBarView android:background="@drawable/status_bar_background" android:orientation="vertical" android:focusable="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+
+
+
+
+
+>
+    <LinearLayout android:orientation="horizontal" android:id="@id/icons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="6.0dip" android:paddingRight="6.0dip"
+
+
+
+
+
+
+>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+
+
+
+
+>
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/moreIcon" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="fill_parent" android:src="@drawable/stat_notify_more" android:visibility="gone"
+
+
+
+
+ />
+
+            <com.android.systemui.statusbar.phone.IconMerger android:orientation="horizontal" android:id="@id/notificationIcons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:gravity="center_vertical"
+
+
+
+
+ />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:id="@id/statusIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:gravity="center_vertical"
+
+
+
+ />
+
+        <LinearLayout android:orientation="horizontal" android:id="@id/signal_battery_cluster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingLeft="2.0dip" android:gravity="center"
+
+
+
+
+
+
+>
+            <include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/signal_cluster_view"
+
+
+
+ />
+            <ImageView android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="4.0dip"
+
+
+
+
+ />
+        </LinearLayout>
+
+        <com.android.systemui.statusbar.policy.Clock android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingLeft="6.0dip" android:gravity="left|center" android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:singleLine="true"
+
+
+
+
+
+
+
+ />
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="6.0dip" android:animationCache="false"
+
+
+
+
+>
+        <ImageSwitcher android:id="@id/tickerIcon" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:layout_marginRight="4.0dip"
+
+
+
+>
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="center"
+
+
+
+ />
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="center"
+
+
+
+ />
+        </ImageSwitcher>
+        <com.android.systemui.statusbar.phone.TickerView android:id="@id/tickerText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingRight="10.0dip" android:layout_weight="1.0" android:paddingTop="2.0dip"
+
+
+
+
+>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:singleLine="true"
+
+
+
+
+ />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:singleLine="true"
+
+
+
+
+ />
+        </com.android.systemui.statusbar.phone.TickerView>
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.PhoneStatusBarView>

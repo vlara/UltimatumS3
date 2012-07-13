@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<RelativeLayout android:id="@id/recent_item" android:layout_height="wrap_content" android:layout_width="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+>
+    <TextView android:id="@id/app_label" android:layout_height="wrap_content" android:layout_width="@dimen/status_bar_recents_app_label_width" android:textSize="@dimen/status_bar_recents_app_label_text_size" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/status_bar_recents_fading_edge_length" android:scrollHorizontally="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginLeft="@dimen/status_bar_recents_app_label_left_margin" android:layout_marginTop="32.0dip" android:singleLine="true" android:ellipsize="marquee" android:textColor="@color/status_bar_recents_app_label_color"
+
+
+
+
+
+
+
+
+
+
+
+
+
+ />
+
+    <FrameLayout android:id="@id/app_thumbnail" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/status_bar_recents_thumbnail_left_margin" android:layout_toRightOf="@id/app_label" android:scaleType="center" android:background="@drawable/recents_thumbnail_bg" android:foreground="@drawable/recents_thumbnail_fg" android:visibility="invisible"
+
+
+
+
+
+
+
+>
+        <ImageView android:id="@id/app_thumbnail_image" android:layout_height="@dimen/status_bar_recents_thumbnail_height" android:layout_width="@dimen/status_bar_recents_thumbnail_width"
+
+
+ />
+    </FrameLayout>
+
+
+    <ImageView android:id="@id/app_icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/status_bar_recents_app_icon_left_margin" android:layout_marginTop="@dimen/status_bar_recents_app_icon_top_margin" android:layout_toRightOf="@id/app_label" android:scaleType="centerInside" android:maxWidth="@dimen/status_bar_recents_app_icon_max_width" android:maxHeight="@dimen/status_bar_recents_app_icon_max_height" android:adjustViewBounds="true"
+
+
+
+
+
+
+
+
+
+ />
+
+
+    <View android:id="@id/recents_callout_line" android:layout_height="1.0dip" android:layout_width="@dimen/status_bar_recents_app_label_width" android:layout_alignParentLeft="true" android:layout_marginLeft="@dimen/status_bar_recents_app_label_left_margin" android:layout_marginTop="3.0dip" android:background="@drawable/recents_callout_line" android:layout_below="@id/app_label" android:layout_toLeftOf="@id/app_thumbnail" android:layout_marginRight="3.0dip"
+
+
+
+
+
+
+
+
+
+ />
+
+    <TextView android:id="@id/app_description" android:layout_height="wrap_content" android:layout_width="@dimen/status_bar_recents_app_label_width" android:textSize="@dimen/status_bar_recents_app_description_text_size" android:fadingEdge="horizontal" android:fadingEdgeLength="@dimen/status_bar_recents_fading_edge_length" android:scrollHorizontally="true" android:layout_alignParentLeft="true" android:layout_marginLeft="@dimen/status_bar_recents_app_label_left_margin" android:layout_marginTop="3.0dip" android:singleLine="true" android:ellipsize="marquee" android:layout_below="@id/recents_callout_line"
+
+
+
+
+
+
+
+
+
+
+
+
+ />
+
+</RelativeLayout>

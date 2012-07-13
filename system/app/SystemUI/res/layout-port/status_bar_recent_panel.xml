@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<com.android.systemui.recent.RecentsPanelView android:id="@id/recents_root" android:layout_height="fill_parent" android:layout_width="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+>
+    <FrameLayout android:id="@id/recents_bg_protect" android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="@drawable/status_bar_recents_background" android:layout_alignParentBottom="true"
+
+
+
+
+
+>
+        <com.android.systemui.recent.RecentsVerticalScrollView android:id="@id/recents_container" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginRight="0.0dip" android:divider="@null" android:stackFromBottom="true" android:fadingEdge="vertical" android:scrollbars="none" android:fadingEdgeLength="@android:dimen/status_bar_height" android:layout_gravity="bottom|left|center" android:clipToPadding="false" android:clipChildren="false"
+
+
+
+
+
+
+
+
+
+
+
+
+>
+            <LinearLayout android:id="@id/recents_linear_layout" android:layout_height="wrap_content" android:layout_width="fill_parent" android:clipToPadding="false" android:clipChildren="false" android:orientation="vertical"
+
+
+
+
+
+ />
+
+        </com.android.systemui.recent.RecentsVerticalScrollView>
+
+    </FrameLayout>
+
+    <include android:id="@id/recents_no_apps" android:layout_height="fill_parent" android:layout_width="fill_parent" android:visibility="invisible" layout="@layout/status_bar_no_recent_apps"
+
+
+
+ />
+
+</com.android.systemui.recent.RecentsPanelView>
