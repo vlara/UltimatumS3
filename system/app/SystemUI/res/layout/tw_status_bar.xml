@@ -27,4 +27,5 @@
             <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:id="@id/ticker_text_view_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
         </com.android.systemui.statusbar.phone.TickerView>
     </LinearLayout>
+    <com.android.systemui.statusbar.BatteryBar android:textAppearance="@android:style/TextAppearance.StatusBar.Icon" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </com.android.systemui.statusbar.phone.PhoneStatusBarView>
