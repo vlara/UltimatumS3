@@ -2,7 +2,8 @@
 <com.android.systemui.statusbar.phone.ExpandedView android:orientation="vertical" android:descendantFocusability="afterDescendants"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
-    <HorizontalScrollView android:id="@id/quicksetting_scroller" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <com.wanam.systemui.quickpanel.PowerWidget android:id="@id/exp_power_stat" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+    <HorizontalScrollView android:id="@id/quicksetting_scroller" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content"
       xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
         <com.android.systemui.statusbar.policy.quicksetting.QuickSettingPanel android:orientation="horizontal" android:id="@id/quicksetting_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/tw_black_bg" android:showDividers="middle" />

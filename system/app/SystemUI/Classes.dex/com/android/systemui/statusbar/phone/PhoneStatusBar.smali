@@ -203,6 +203,8 @@
 
 .field mPostCollapseCleanup:Ljava/lang/Runnable;
 
+.field mPowerWidget:Lcom/wanam/systemui/quickpanel/PowerWidget;
+
 .field mQueueLock:Ljava/lang/Object;
 
 .field mQuickSettingScroller:Landroid/widget/HorizontalScrollView;
@@ -2862,7 +2864,11 @@
     invoke-direct {v2, v3, v4}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v1, v0, p3, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
+    
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mPowerWidget:Lcom/wanam/systemui/quickpanel/PowerWidget;
 
+    invoke-virtual {v1}, Lcom/wanam/systemui/quickpanel/PowerWidget;->updateWidget()V
+    
     .line 834
     return-void
 .end method
@@ -7592,6 +7598,22 @@
 
     iput-object v0, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mScrollView:Landroid/widget/ScrollView;
 
+    const v18, 0x7f0f00d9
+
+    move/from16 v0, v18
+
+    invoke-virtual {v6, v0}, Lcom/android/systemui/statusbar/phone/ExpandedView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v18
+
+    check-cast v18, Lcom/wanam/systemui/quickpanel/PowerWidget;
+
+    move-object/from16 v0, v18
+
+    move-object/from16 v1, p0
+
+    iput-object v0, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mPowerWidget:Lcom/wanam/systemui/quickpanel/PowerWidget;
+    
     .line 516
     sget-boolean v18, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->useTouchWizGUI:Z
 
@@ -8374,6 +8396,12 @@
     .line 647
     invoke-direct/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->tw_loadNotificationShade()V
 
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mPowerWidget:Lcom/wanam/systemui/quickpanel/PowerWidget;
+
+    invoke-virtual {v0}, Lcom/wanam/systemui/quickpanel/PowerWidget;->setupWidget()V
+    
     .line 654
     return-object v13
 
