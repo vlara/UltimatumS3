@@ -37,7 +37,7 @@
 
     .prologue
     .line 78
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     sput v0, Lcom/android/systemui/statusbar/policy/Clock;->AM_PM_STYLE:I
 
