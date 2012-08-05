@@ -2,6 +2,9 @@
 <com.android.systemui.statusbar.phone.PhoneStatusBarView android:orientation="vertical" android:background="@drawable/status_bar_background" android:focusable="true" android:descendantFocusability="afterDescendants"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:gravity="center" android:paddingTop="3.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
     <LinearLayout android:orientation="horizontal" android:id="@id/icons" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
             <com.android.systemui.statusbar.phone.CarrierLabel android:gravity="center_vertical" android:id="@id/carrierLabel" android:background="#ff000000" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
@@ -15,9 +18,8 @@
             <TextView android:textSize="12.0dip" android:textColor="#ffa6a6a6" android:layout_gravity="center" android:id="@id/battery_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_network_name_separator" />
             <ImageView android:gravity="center" android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </LinearLayout>
-        <com.android.systemui.statusbar.policy.Clock android:textSize="@dimen/status_bar_clock_text_size" android:textColor="#ff959595" android:gravity="left|center" android:id="@id/clock" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" />
     </LinearLayout>
-    <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:paddingLeft="6.0dip" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:background="@drawable/status_bar_bg_tile" android:paddingLeft="6.0dip" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ImageSwitcher android:id="@id/tickerIcon" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:layout_marginRight="4.0dip">
             <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="centerInside" />
             <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="centerInside" />
